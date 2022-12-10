@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form_6101</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img
+        src="https://b2b.btl.gov.il/BTL.ILG.Payments/Images/Banner.png"
+        width="550px"
+      />
+      <table style="float: left">
+        <tbody>
+          <tr>
+            <td>
+              לשימוש<br />
+              פנימי <br />
+              בלבד<br />
+              סריקה
+            </td>
+            <td>
+              <input type="number" name="idNumber" id="idNumber" />
+              <br />
+              <label for="idNumber">מס' זהות/דרכון</label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </header>
+    <form action="https://formspree.io/f/mbjbnpjz" method="post">
+      <section name="personalInfo">
+        <fieldset>
+          <legend>פרטים אישיים</legend>
+          <fieldset>
+            <legend>פרטי המבוטח</legend>
+            <label for="lastName">שם משפחה</label>
+            <input type="text" id="lastName" name="lastName" />
+
+            <label for="FirstName">שם פרטי</label>
+            <input type="text" id="FirstName" name="FirstName" />
+
+            <label for="clientId">מספר זהות </label>
+            <input type="number" id="clientId" name="clientId" />
+            <br />
+            <br />
+            <label>מצב משפחתי</label>
+            <br />
+            <input type="radio" name="status" id="statusSingel" />
+            <label for="statusSingel"> רווק</label>
+
+            <input type="radio" name="status" id="statusMarried" />
+            <label for="statusMarried"> נשוי</label>
+
+            <input type="radio" name="status" id="statusKnownInPublic" />
+            <label for="statusKnownInPublic"> ידוע בציבור</label>
+
+            <input type="radio" name="status" id="statusDivorcee" />
+            <label for="statusDivorcee"> גרוש </label>
+
+            <input type="radio" name="status" id="statusWinddower" />
+            <label for="statusWinddower"> אלמן </label>
+
+            <div name="statusDate" style="float: left">
+              <label for="StatusDateYear">החל מתאריך</label>
+              <input type="date" name="StatusDateYear" id="StatusDateYear" />
+            </div>
+          </fieldset>
+          <br />
+          <section name="PartnerInfo">
+            <fieldset>
+              <legend>פרטי בן/בת הזוג</legend>
+              <label for="PartnerlastName">שם משפחה</label>
+              <input type="text" id="PartnerlastName" name="PartnerlastName" />
+
+              <label for="PartnerFirstName">שם פרטי</label>
+              <input
+                type="text"
+                id="PartnerFirstName"
+                name="PartnerFirstName"
+              />
+
+              <label for="PartnerclientId">מספר זהות </label>
+              <input
+                type="number"
+                id="PartnerclientId"
+                name="PartnerclientId"
+              />
+            </fieldset>
+          </section>
+          <br />
+          <fieldset>
+            <legend>כתובת מגורים ופרטי התקשרות</legend>
+
+            <label for="clientStreet">רחוב/תא דואר</label>
+            <input type="text" id="clientStreet" name="clientStreet" />
+
+            <label for="clientHomeNum">מס' בית </label>
+            <input type="number" id="clientHomeNum" name="clientHomeNum" />
+
+            <label for="clientEnterHomeNum">כניסה </label>
+            <input
+              type="number"
+              id="clientEnterHomeNum"
+              name="clientEnterHomeNum"
+            />
+
+            <label for="clientApparantmentHomeNum">דירה </label>
+            <input
+              type="number"
+              id="clientApparantmentHomeNum"
+              name="clientApparantmentHomeNum"
+            />
+
+            <label for="clientCity">ישוב </label>
+            <input type="number" id="clientCity" name="clientCity" />
+
+            <label for="clientPostalCode">מיקוד </label>
+            <input
+              type="number"
+              id="clientPostalCode"
+              name="clientPostalCode"
+            />
+            <br /><br />
+
+            <label for="clientlineTel">טלפון קווי </label>
+            <input type="tel" id="clientlineTel" name="clientlineTel" />
+
+            <label for="clientMobile">טלפון נייד </label>
+            <input type="tel" id="clientMobile" name="clientMobile" />
+
+            <label for="clientEmail">דואר אלקטרוני </label>
+            <input type="email" id="clientEmail" name="clientEmail" />
+            <br /><br />
+            <label
+              ><b
+                >אם הטלפון הנייד או הדואר אינם שלך - נא השלם את הפרטים הבאים:</b
+              ></label
+            >
+            <br />
+            <br />
+            <label for="ContactPersonlastName">שם משפחה</label>
+            <input
+              type="text"
+              id="ContactPersonlastName"
+              name="ContactPersonlastName"
+            />
+
+            <label for="ContactPersonFirstName">שם פרטי</label>
+            <input
+              type="text"
+              id="ContactPersonFirstName"
+              name="ContactPersonFirstName"
+            />
+
+            <label for="ContactPersonclientId">מספר זהות </label>
+            <input
+              type="number"
+              id="ContactPersonclientId"
+              name="ContactPersonclientId"
+            />
+            <br /><br />
+
+            <input
+              type="checkbox"
+              name="NoApprovalGetDigitalInfo"
+              id="NoApprovalGetDigitalInfo"
+            />
+            <label for="NoApprovalGetDigitalInfo"
+              >אני מסרב לקבל הודעות הכוללות מידע אישי בערוצים הדיגיטליים (הודעות
+              טקס - SMS דואר אלטקרוני) במקום דואר רגיל. <br />
+              לידיעתך, אם לא סימנת "אני מסרב", הודעות בנושאי הביטוח הלאומי
+              ישלחובערוצים הדיגיטליים, לפי המידע שמסרת.
+            </label>
+            <br /><br />
+            <label><b>מעון למכתבים (אם שונה מהכתובת הרשומה למעלה)</b></label>
+            <br />
+
+            <label for="DifferentclientContactName">שם הנמען</label>
+            <input
+              type="text"
+              id="DifferentclientContactName"
+              name="DifferentclientContactName"
+            />
+            <label for="DifferentclientStreet">רחוב/תא דואר</label>
+            <input
+              type="text"
+              id="DifferentclientStreet"
+              name="DifferentclientStreet"
+            />
+
+            <label for="DifferentclientHomeNum">מס' בית </label>
+            <input
+              type="number"
+              id="DifferentclientHomeNum"
+              name="DifferentclientHomeNum"
+            />
+
+            <label for="DifferentclientEnterHomeNum">כניסה </label>
+            <input
+              type="number"
+              id="DifferentclientEnterHomeNum"
+              name="DifferentclientEnterHomeNum"
+            />
+
+            <label for="DifferentclientApparantmentHomeNum">דירה </label>
+            <input
+              type="number"
+              id="DifferentclientApparantmentHomeNum"
+              name="DifferentclientApparantmentHomeNum"
+            />
+            <br />
+            <br />
+            <label for="DifferentclientCity">ישוב </label>
+            <input
+              type="number"
+              id="DifferentclientCity"
+              name="DifferentclientCity"
+            />
+
+            <label for="DifferentclientPostalCode">מיקוד </label>
+            <input
+              type="number"
+              id="DifferentclientPostalCode"
+              name="DifferentclientPostalCode"
+            />
+          </fieldset>
+        </fieldset>
+      </section>
+      <br />
+      <section name="BankaccountInfo">
+        <fieldset name="BankInfo">
+          <legend>פרטי חשבון הבנק של המבוטח</legend>
+          <label for="BankName">שם הבנק </label>
+          <input type="text" id="BankName" name="BankName" />
+
+          <label for="BankAdressBranchName">שם הסניף/כתובתו </label>
+          <input
+            type="text"
+            id="BankAdressBranchName"
+            name="BankAdressBranchName"
+          />
+
+          <label for="BankNum">מס' סניף </label>
+          <input type="number" id="BankNum" name="BankNum" />
+
+          <label for="BankaccountNum">מספר חשבון </label>
+          <input type="number" id="BankaccountNum" name="BankaccountNum" />
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>פרטי כרטיס אשראי לתשלום דמי ביטוח בהוראת קבע</legend>
+
+          <label for="CreditCardNum">מספר כרטיס</label>
+          <input type="number" id="CreditCardNum" name="CreditCardNum" />
+
+          <label for="CreditCardvalidity">תוקף </label>
+          <input
+            type="date"
+            id="CreditCardvalidity"
+            name="CreditCardvalidity"
+          />
+
+          <label for="CreditCardvaOwnerID">ת.ז של בעל הכרטיס </label>
+          <input
+            type="number"
+            id="CreditCardvaOwnerID"
+            name="CreditCardvaOwnerID"
+          />
+          <br />
+          <br />
+          <label
+            ><b
+              >אבקש לחייב את כרטיס האשראי בגין מקדמות דמי ביטוח ו/או חיובים על
+              פי הסדר תשלומים בסכומים ובמועדים שיקבעו <br />
+              מפעם בפים ע"י המוסד לביטוח לאומי. ידוע לי כי בקשה זו תקפה גם לאחר
+              חיוש תוקף הכרטיס או הנפקת כרטיס שישאר <br />
+              מספר אחר, כל עוד לא התקבלה הודעת ביטול או שינוי באופן תשלום
+              המקדמות ובפכוף לאישור חברת האשראי <br />
+              שם פרטי ומשפחה של בעל הכרטיס _____________________________ חתימת
+              בעל הכרטיס _________________________. <br
+            /></b>
+          </label>
+        </fieldset>
+      </section>
+      <br />
+      <button>שלח</button>
+    </form>
+    <footer style="text-align: center">
+      <label> טופס זה מנוסח בלשון זכר אך פונה לנשים ולגברים כאחד</label>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form_101</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      .center {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .right {
+        float: right;
+        margin: 8px;
+      }
+      th {
+        text-align: center;
+      }
+      td {
+        text-align: center;
+      }
+      .halfWidth {
+        width: 50%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <fieldset style="text-align: center">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/he/thumb/c/cd/Rashut_HaMisim.svg/1200px-Rashut_HaMisim.svg.png"
+        width="75px"
+        style="float: right"
+      />
+      <b>כרטיס עובד </b><br />
+
+      ובקשה להקלה ולתיאום מס על ידי המעסיק<br />
+
+      לפני תקנות מס הכנסה (ניכוי ממשכורת ומשכר עבודה), התשנ"ג - שנת 1993 <br />
+      שנת המס ____________ <br />
+    </fieldset>
+    <br />
+    <fieldset style="text-align: center">
+      טופס זה ימולא על-ידי כל עובד עם תחילת עבודתו, וכן בתחילת כל שנת מס (אא"כ
+      המנהל אישר אחרת). הטופס מהווה אסמכתא למעסיק ולמתן <br />
+      הקלות במס ולעריכת תיאומי מס בחישוב משכורת (1) העובד. אם חל שינוי בפרטים -
+      יש להצהיר על כך תוך שבוע ימים. <br />
+      . (ראה הסברים (לפי מספרים) מעבר לדף)
+    </fieldset>
+    <br />
+
+    <form action="https://formspree.io/f/mpznvoap" method="post">
+      <section name="employerInfo">
+        <fieldset>
+          <legend>א. פרטי המעסיק (למילוי ע"י המעסיק)</legend>
+          <label for="employername">שם</label>
+          <input type="text" id="employername" name="employername" />
+
+          <label for="employeradress">כתובת</label>
+          <input type="text" id="employeradress" name="employeradress" />
+
+          <label for="employertelNum">מספר טלפון</label>
+          <input type="number" id="employertelNum" name="employertelNum" />
+
+          <label for="employernicuemNum">מספר תיק ניכויים</label>
+          <input
+            type="number"
+            id="employernicuemNum"
+            name="employernicuemNum"
+          />
+        </fieldset>
+        <br />
+        <br />
+      </section>
+
+      <section name=" employeeInfo">
+        <fieldset>
+          <legend>
+            ב. פרטי העובד/ת (יש לצרף צילום ת.ז כולל ספח, יש לצרף צילום רק אם היו
+            שינויים בפרטים. למי שאין מספר תעודת זהות יש לצרף צילום דרכון ואישור
+            / רישיון שהייה בישראל שנתנו על ידי רשות האוכלוסין וההגירה.)
+          </legend>
+          <br />
+          <section name="employeePersonalInfo">
+            <label for="employeeid">ת.ז</label>
+            <input type="number" id="employeeid" name="employeeid" />
+
+            <label for="firstname">שם פרטי </label>
+            <input type="text" id="firstname" name="firstname" />
+
+            <label for="employeelastname">שם משפחה</label>
+            <input type="text" id="employeelastname" name="employeelastname" />
+
+            <label for="employeebirth">תאריך לידה </label>
+            <input type="date" id="employeebirth" name="employeebirth" />
+
+            <label for="employeeincreasedate">תאריך עלייה </label>
+            <input
+              type="date"
+              id="employeeincreasedate"
+              name="employeeincreasedate"
+            />
+            <br /><br />
+          </section>
+
+          <section name="employeeadress">
+            <label for="employeepassportname">מספר דרכון </label>
+            <input
+              type="number"
+              id="employeepassportname"
+              name="employeepassportname"
+            />
+            <label for="employeeadressstreet">רחוב </label>
+            <input
+              type="text"
+              id="employeeadressstreet"
+              name="employeeadressstreet"
+            />
+
+            <label for="employeeadressstreetnum">מספר </label>
+            <input
+              type="number"
+              id="employeeadressstreetnum"
+              name="employeeadressstreetnum"
+            />
+
+            <label for="employeeadressstreetcountry">עיר </label>
+            <input
+              type="text"
+              id="employeeadressstreetcountry"
+              name="employeeadressstreetcountry"
+            />
+
+            <label for="employeeadressstreetpostal">מיקוד </label>
+            <input
+              type="number"
+              id="employeeadressstreetpostal"
+              name="employeeadressstreetpostal"
+            />
+            <br />
+          </section>
+          <br />
+          <section name="employeegender" class="right">
+            <label>מין </label><br />
+
+            <input
+              type="radio"
+              name="employeegender"
+              id="employeegendermale"
+              value="male"
+            />
+            <label for="employeegendermale">זכר </label>
+            <br />
+
+            <input
+              type="radio"
+              name="employeegender"
+              id="employeegenderFemale"
+              value="Female"
+            />
+            <label for="employeegenderFemale">נקבה</label>
+            <br />
+            <!-- ---------------------- -->
+          </section>
+
+          <section name="employeestatus" class="right">
+            <label>מצב משפחתי </label>
+            <br />
+            <input
+              type="radio"
+              name="employeestatus"
+              id="employeestatusbachelor"
+              value="employeestatusbachelor"
+            />
+            <label for="employeestatusbachelor">רווק/ה </label>
+            <br />
+            <input
+              type="radio"
+              name="employeestatus"
+              id="employeestatusmarried"
+              value="employeestatusmarried"
+            />
+            <label for="employeestatusmarried">נשוי/אה</label>
+            <br />
+            <input
+              type="radio"
+              name="employeestatus"
+              id="employeestatusdivorcee"
+              value="employeestatusdivorcee"
+            />
+            <label for="employeestatusdivorcee">גרוש/ה</label>
+            <br />
+            <input
+              type="radio"
+              name="employeestatus"
+              id="employeestatuswidower"
+              value="employeestatuswidower"
+            />
+            <label for="employeestatuswidower">אלמן/ה</label>
+            <br />
+            <input
+              type="radio"
+              name="employeestatus"
+              id="employeestatusseparated"
+              value="employeestatusseparated"
+            />
+            <label for="employeestatusseparated"
+              >פרוד/ה (חובה לצרף אישור פ"ש)</label
+            >
+            <br />
+          </section>
+
+          <section name="employeeresident" class="right">
+            <label>תושב ישראל </label>
+            <br />
+            <input
+              type="radio"
+              name="employeeresident"
+              id="employeeresidentisrael"
+              value="yes"
+            />
+            <label for="employeeresidentisrael">כן </label>
+            <br />
+            <input
+              type="radio"
+              name="employeeresident"
+              id="employeeresidentnotisrael"
+              value="no"
+            />
+            <label for="employeeresidentnotisrael">לא</label>
+            <br />
+          </section>
+
+          <section name="employeekibbutzresident" class="right">
+            <label> חבר מושב שיתופי </label>
+            <br />
+            <input
+              type="radio"
+              name="employeekibbutzresident"
+              id="employeekibbutzresidentyes"
+              value="yes"
+            />
+            <label for="employeekibbutzresidentyes">כן </label>
+            <br />
+            <input
+              type="radio"
+              name="employeekibbutzresident"
+              id="employeenotkibbutzresidentyes"
+              value="no"
+            />
+            <label for="employeenotkibbutzresidentyes">לא</label>
+            <br />
+          </section>
+
+          <section name="employeehmo" class="right">
+            <label> חבר בקופת חולים </label>
+            <br />
+            <input
+              type="radio"
+              name="employeehmo"
+              id="employeenohmo"
+              value="yes"
+            />
+            <label for="employeenohmo">לא </label>
+            <br />
+            <input
+              type="radio"
+              name="employeehmo"
+              id="employeeyeshmo"
+              value="no"
+            />
+            <label for="employeeyeshmo">כן</label>
+            <br />
+          </section>
+          <br /><br /><br /><br /><br /><br /><br /><br />
+
+          <section name="employeecontactInfo">
+            <label for="employeeemail">כתובת דואל אלקטרוני</label>
+            <input type="email" id="employeeemail" name="employeeemail" />
+
+            <label for="employeefhone">מספר טלפון</label>
+            <input type="tel" id="employeefhone" name="employeefhone" />
+
+            <label for="employeecellfhone">מספר טלפון נייד</label>
+            <input type="tel" id="employeecellfhone" name="employeecellfhone" />
+          </section>
+        </fieldset>
+      </section>
+      <br />
+
+      <section name="employeeChildren" class="halfWidth" style="float: right">
+        <fieldset>
+          <legend>
+            ג. פרטים על ילדיי שבשנת המס טרם מלאו להם 19 שנה (ע"פ ספח תעודת זהות)
+          </legend>
+          <br />
+          <table>
+            <thead>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>שם</td>
+                <td>מספר זהות</td>
+                <td>תאריך לידה</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" name="inYourPossession" /></td>
+                <td><input type="checkbox" name="ChildAllowance" /></td>
+                <td><input type="number" name="IdFirstChildren" /></td>
+                <td><input type="number" name="NameFirstChildren" /></td>
+                <td><input type="date" name="BirthDate_first_children" /></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="inYourPossession" /></td>
+                <td><input type="checkbox" name="ChildAllowance" /></td>
+                <td><input type="number" name="IdSecondChildren" /></td>
+                <td><input type="number" name="NameSecondChildren" /></td>
+                <td><input type="date" name="BirthDateSecondchildren" /></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="inYourPossession" /></td>
+                <td><input type="checkbox" name="ChildAllowance" /></td>
+                <td><input type="number" name="IdThirdChildren" /></td>
+                <td><input type="number" name="NameThirdChildren" /></td>
+                <td><input type="date" name="BirthDateThirdChildren" /></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="inYourPossession" /></td>
+                <td><input type="checkbox" name="ChildAllowance" /></td>
+                <td><input type="number" name="IdFourChildren" /></td>
+                <td><input type="number" name="NameFourChildren" /></td>
+                <td><input type="date" name="BirthDateFourChildren" /></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="inYourPossession" /></td>
+                <td><input type="checkbox" name="ChildAllowance" /></td>
+                <td><input type="number" name="IdFiveChildren" /></td>
+                <td><input type="number" name="NameFiveChildren" /></td>
+                <td><input type="date" name="BirthDateFiveChildren" /></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="inYourPossession" /></td>
+                <td><input type="checkbox" name="ChildAllowance" /></td>
+                <td><input type="number" name="IdSixChildren" /></td>
+                <td><input type="number" name="NameSixChildren" /></td>
+                <td><input type="date" name="BirthDateSixChildren" /></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="inYourPossession" /></td>
+                <td><input type="checkbox" name="ChildAllowance" /></td>
+                <td><input type="number" name="IdSevenChildren" /></td>
+                <td><input type="number" name="NameSevenChildren" /></td>
+                <td><input type="date" name="BirthDateSevenChildren" /></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="inYourPossession" /></td>
+                <td><input type="checkbox" name="ChildAllowance" /></td>
+                <td><input type="number" name="IdEigthChildren" /></td>
+                <td><input type="number" name="NameEigthChildren" /></td>
+                <td><input type="date" name="BirthDateEigthChildren" /></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="inYourPossession" /></td>
+                <td><input type="checkbox" name="ChildAllowance" /></td>
+                <td><input type="number" name="IdNineChildren" /></td>
+                <td><input type="number" name="NameNineChildren" /></td>
+                <td><input type="date" name="BirthDateNineChildren" /></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="inYourPossession" /></td>
+                <td><input type="checkbox" name="ChildAllowance" /></td>
+                <td><input type="number" name="IdTenChildren" /></td>
+                <td><input type="number" name="NameNTenChildren" /></td>
+                <td><input type="date" name="BirthDateTenChildren" /></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="inYourPossession" /></td>
+                <td><input type="checkbox" name="ChildAllowance" /></td>
+                <td><input type="number" name="IdElevenChildren" /></td>
+                <td><input type="number" name="NameNElevenChildren" /></td>
+                <td><input type="date" name="BirthDateElevenChildren" /></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="inYourPossession" /></td>
+                <td><input type="checkbox" name="ChildAllowance" /></td>
+                <td><input type="number" name="IdTwelveChildren" /></td>
+                <td><input type="number" name="NameNTwelveChildren" /></td>
+                <td><input type="date" name="BirthDateTwelveChildren" /></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="inYourPossession" /></td>
+                <td><input type="checkbox" name="ChildAllowance" /></td>
+                <td><input type="number" name="IdThirteenChildren" /></td>
+                <td><input type="number" name="NameNThirteenChildren" /></td>
+                <td><input type="date" name="BirthDateThirteenChildren" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+      </section>
+
+      <section name="emloyeeSalary" class="halfWidth" style="float: left">
+        <fieldset>
+          <legend>ד. פרטים על הכנסותיי ממעסיק זה</legend>
+          <label>אני מקבל/ת: (ראה הסברים מעבר לדף)</label>
+          <br />
+          <input type="checkbox" id="monthlySalary" />
+          <label for="monthlySalary">משכורת חודש</label>
+          <br />
+          <input type="checkbox" id="OtherWorkmonthlySalary" />
+          <label for="OtherWorkmonthlySalary">משכורת בעד משרת נוספת</label>
+          <br />
+          <input type="checkbox" id="partialSalary" />
+          <label for="partialSalary">משכורת חלקית</label>
+          <br />
+          <input type="checkbox" id="DailySalary" />
+          <label for="DailySalary">שכר עבודה (עובד יומי) </label>
+          <br />
+          <input type="checkbox" id="allowance" />
+          <label for="allowance"> קצבה </label>
+          <br />
+          <input type="checkbox" id="scholarship" />
+          <label for="scholarship">מלגה </label>
+          <br />
+        </fieldset>
+
+        <fieldset>
+          <legend>ה. פרטים על הכנסות אחרות</legend>
+          <input type="checkbox" id="noMoreIncome" />
+          <label for="noMoreIncome">אין לי הכנסות אחרות </label>
+          <br />
+          <hr />
+          <label>יש לי הכנסות אחרות כמפורט לדלקמן:</label>
+          <br />
+          <input type="checkbox" id="OthermonthlySalary" />
+          <label for="OthermonthlySalary">משכורת חודש</label>
+          <br />
+          <input type="checkbox" id="MoreOtherWorkmonthlySalary" />
+          <label for="MoreOtherWorkmonthlySalary">משכורת בעד משרת נוספת</label>
+          <br />
+          <input type="checkbox" id="OtherpartialSalary" />
+          <label for="OtherpartialSalary">משכורת חלקית</label>
+          <br />
+          <input type="checkbox" id="OtherDailySalary" />
+          <label for="OtherDailySalary">שכר עבודה (עובד יומי) </label>
+          <br />
+          <input type="checkbox" id="Otherallowance" />
+          <label for="Otherallowance"> קצבה </label>
+          <br />
+          <input type="checkbox" id="Otherscholarship" />
+          <label for="Otherscholarship">מלגה </label>
+          <br />
+        </fieldset>
+        <br />
+      </section>
+      <section name="employeePartnerlInfo">
+        <fieldset style="width: 98%">
+          <legend>ו. פרטים על בן/בת זוג</legend>
+          <label for="Partneremployeeid">ת.ז</label>
+          <input
+            type="number"
+            id="Partneremployeeid"
+            name="Partneremployeeid"
+          />
+
+          <label for="Partnerfirstname">שם פרטי </label>
+          <input type="text" id="Partnerfirstname" name="Partnerfirstname" />
+
+          <label for="Partneremployeelastname">שם משפחה</label>
+          <input
+            type="text"
+            id="Partneremployeelastname"
+            name="Partneremployeelastname"
+          />
+
+          <label for="Partneremployeebirth">תאריך לידה </label>
+          <input
+            type="date"
+            id="Partneremployeebirth"
+            name="Partneremployeebirth"
+          />
+
+          <label for="Partneremployeeincreasedate">תאריך עלייה </label>
+          <input
+            type="date"
+            id="Partneremployeeincreasedate"
+            name="Partneremployeeincreasedate"
+          />
+          <br />
+          <br />
+          <label for="Partneremployeepassportnum">מספר דרכון </label>
+          <input
+            type="number"
+            id="Partneremployeepassportnum"
+            name="Partneremployeepassportnum"
+          />
+
+          <input
+            type="checkbox"
+            id="PartnerNoMoreIncome"
+            name="PartnerNoMoreIncome"
+          />
+          <label for="PartnerNoMoreIncome">אין לבן/בת הזוג כל הכנסה</label>
+          <label>יש לבן/בת הזוג הכנסה מ:</label>
+
+          <input
+            type="checkbox"
+            id="PartnerIncomeType"
+            name="PartnerIncomeType"
+          />
+          <label for="PartnerIncomeType"> עבודה/קצבה/עסק </label>
+
+          <input
+            type="checkbox"
+            id="PartnerIncomeOther"
+            name="PartnerIncomeOther"
+          />
+          <label for="PartnerIncomeOther"> הכנסה אחרת </label>
+        </fieldset>
+      </section>
+      <br />
+      <section name="YearChanges">
+        <fieldset>
+          <legend>
+            ה. שינויים במהלך השנה (כולל שינויים הקשורים לבקשה להקלה בחישוב המס
+            מעבר לדף)
+          </legend>
+          <br />
+          <table style="width: 100%">
+            <thead>
+              <tr>
+                <td>תאריך השינוי</td>
+                <td>פרטי השינוי</td>
+                <td>תאריך הודעה</td>
+                <td>חתימת העובד/ת</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input type="date" name="FirstDateChange" />
+                </td>
+                <td>
+                  <input type="text" name="FirstDetileChange" />
+                </td>
+                <td>
+                  <input type="date" name="FirstDetileChangereport" />
+                </td>
+                <td>
+                  <input type="text" name="Firstsign" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="date" name="SecondDateChange" />
+                </td>
+                <td>
+                  <input type="text" name="SecondDetileChange" />
+                </td>
+                <td>
+                  <input type="date" name="SecondDetileChangereport" />
+                </td>
+                <td>
+                  <input type="text" name="Secondsign" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="date" name="ThirdDateChange" />
+                </td>
+                <td>
+                  <input type="text" name="ThirdDetileChange" />
+                </td>
+                <td>
+                  <input type="date" name="ThirdDetileChangereport" />
+                </td>
+                <td>
+                  <input type="text" name="Thirdsign" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+      </section>
+      <br />
+      <button>שלח</button>
+    </form>
+  </body>
+</html>

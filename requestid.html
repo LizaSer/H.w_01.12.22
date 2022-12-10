@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request_ID_Form</title>
+  </head>
+  <body>
+    <header>
+      <fieldset style="text-align: center">
+        <img
+          src="https://image.modiinapp.com/4fcdd8c6cb376_300_300_crop.jpg"
+          style="width: 100px; float: right"
+        />
+        <img
+          src="https://www.torim4u.co.il/wp-content/uploads/2016/06/hagira-575.jpg.webp"
+          style="width: 200px; float: left"
+        />
+
+        <label>
+          <b
+            >מדינת ישראל <br />
+            רשות האוכלוסין וההגירה</b
+          >
+          <hr style="width: 75%" />
+          <label><b> בקשה לתעודת זהות ביומטרית</b></label>
+        </label>
+      </fieldset>
+      <fieldset style="text-align: center">
+        ראשי להגיש הבקשה המבקש/ת עבור עצמו/ה בלבד, נוכחות אישית בלשכה חובה. עבור
+        בקשה לתעודת זהות במקום תעודה אבודה / גנובה / מושחתת או עבור בקשה לתעודת
+        זהות בעקבות בקשה למחיקת טביעות אצבע <br />מהמאגר הביומטרי נגבית אגרה על
+        פי החוק, האגרה נגבית עבור הגשת הבקשה ואין מחזירים התשלום אם הבקשה נדחית
+        או מתבטלת, בבקשה לתעודת זהות לקטין מתחת לגיל 16 נדרשת הסכמה של אחד
+        ההורים.
+      </fieldset>
+    </header>
+    <br />
+
+    <form action="https://formspree.io/f/mjvznpvj" method="post">
+      <section name="reasonIDRequest">
+        <label><b>בקשה לתעודת זהות:</b> נא לסמן X במשבצת המתאימה לבקשתך.</label>
+        <br /><br />
+
+        <input type="checkbox" id="FirstIDRequest" name="FirstIDRequest" />
+        <label for="FirstIDRequest">
+          ראשונה, יש לצרף תעודת זהות מקורית של ההורה ה הינך רשום.</label
+        >
+        <br />
+        <input type="checkbox" id="ExpiredIDRequest" name="ExpiredIDRequest" />
+        <label for="ExpiredIDRequest">
+          בעקבות תעודת זהות שפג תוקפה, יש לצרף את התעודה הנוכחית בשלמותה.</label
+        >
+        <br />
+        <input type="checkbox" id="BlauIDRequest" name="BlauIDRequest" />
+        <label for="BlauIDRequest">
+          בעקבות תעודה בלויה, יש לצרף את התעודה הונכחית בשלמותה.</label
+        >
+        <br />
+        <input
+          type="checkbox"
+          id="ChangeDetailsIDRequest"
+          name="ChangeDetailsIDRequest"
+        />
+        <label for="ChangeDetailsIDRequest">
+          בעקבות שינוי בפרטים האישיים, יש לצרף מסמכים מקוריים לאימות
+          השינוי.</label
+        >
+        <br />
+        <input type="checkbox" id="lostIDRequest" name="lostIDRequest" />
+        <label for="lostIDRequest">
+          במקום אבודה/גנובה/מושחתת, יש לצרף מסמך מזהה (דרכון ישראלי חובה אם
+          ישנו)</label
+        >
+        <br />
+        <input
+          type="checkbox"
+          id="cancelationuIDRequest"
+          name="cancelationuIDRequest"
+        />
+        <label for="cancelationuIDRequest">
+          בעקבות ביטול תעודת זהות נוכחית, חובה לצרף תעודת זהות ומסמך הנסיעה
+          שברשותך.</label
+        >
+      </section>
+      <br />
+      <section name=" clientDetails">
+        <label><b>פרטי מבקש/ת השרות</b></label>
+        <fieldset name="clientID" style="width: 40%">
+          <label for="clientID">מספר הזהות</label>
+          <input type="number" id="clientID" name="clientID" />
+        </fieldset>
+        <br />
+        <fieldset name="clientDetailsName">
+          <label for="clientlastName">שם משפחה </label>
+          <input type="text" id="clientlastName" name="clientlastName" />
+
+          <label for="clientFirstName">שם פרטי </label>
+          <input type="text" id="clientFirstName" name="clientFirstName" />
+
+          <label for="clientfatherName">שם האב </label>
+          <input type="text" id="clientfatherName" name="clientfatherName" />
+
+          <label for="clientgrandfatherName">שם הסב </label>
+          <input
+            type="text"
+            id="clientgrandfatherName"
+            name="clientgrandfatherName"
+          />
+
+          <label for="clientMotherName">שם האם </label>
+          <input type="text" id="clientMotherName" name="clientMotherName" />
+          <br />
+        </fieldset>
+        <br />
+        <fieldset name="clientDateAndBirthDetails">
+          <label for="HebrewBirthDate"> תאריך הלידה העברי</label>
+          <input type="date" id="HebrewBirthDate" name="HebrewBirthDate" />
+
+          <label for="BirthDate"> תאריך הלידה הלועזי</label>
+          <input type="date" id="BirthDate" name="BirthDate" />
+
+          <label for="countryOfBirth"> ארץ לידה </label>
+          <input type="text" id="countryOfBirth" name="countryOfBirth" />
+
+          <label>מין: </label>
+
+          <label for="genderMale">זכר</label>
+          <input type="radio" name="gender" id="genderMale" />
+
+          <label for="genderFemale">נקבה</label>
+          <input type="radio" name="gender" id="genderFemale" />
+
+          <label>המצב האישי: </label>
+
+          <label for="statusSingel">רווק/ה</label>
+          <input type="radio" name="status" id="statusSingel" />
+
+          <label for="statusMarried">נשוי/אה</label>
+          <input type="radio" name="status" id="statusMarried" />
+
+          <label for="statusDivorcee">גרוש/ה/</label>
+          <input type="radio" name="status" id="statusDivorcee" />
+
+          <label for="statusWidower">אלמנ/ה</label>
+          <input type="radio" name="status" id="statusWidower" />
+
+          <label for="Nation"> לאום </label>
+          <input type="text" id="Nation" name="Nation" />
+        </fieldset>
+
+        <section name="NoHebrewBirthDateInID">
+          <label for="NoHebrewBirthDateInID"
+            >ע"פ חוק המרשם ירשם תאריך הלידה העברי בתעודת הזהות שלך, אם אין
+            ברצונך שתאריך הלידה העברי יירשם בתעודת הזהות יש לסמן X במשבצת
+            זו.</label
+          >
+          <input
+            type="checkbox"
+            id="NoHebrewBirthDateInID"
+            name="NoHebrewBirthDateInID"
+          />
+        </section>
+        <br />
+        <fieldset name="EnglishClientDetails">
+          <label for="EnglishLastName"> שם משפחה באנגלית</label>
+          <input type="text" id="EnglishLastName" name="EnglishLastName" />
+
+          <label for="EnglishFirstName"> שם פרטי באנגלית</label>
+          <input type="text" id="EnglishFirstName" name="EnglishFirstName" />
+
+          <label for="previousLastName"> שם משפחה קודם</label>
+          <input type="text" id="previousLastName" name="previousLastName" />
+
+          <label for="previousFirstName"> שם משפחה קודם</label>
+          <input type="text" id="previousFirstName" name="previousFirstName" />
+
+          <label for="previousPatnerName"> שם נעורים לנשוי/אה</label>
+          <input
+            type="text"
+            id="previousPatnerName"
+            name="previousPatnerName"
+          />
+        </fieldset>
+        <br />
+        <section name="previousNameInID" style="float: right">
+          <label for="previousNameInID"
+            >השם הקודם ירשם בספח תעודת הזהות אם טרם עברו 7 שנים מיום השינוי.<br />
+            אם ברצונך שהשם הקודם ירשם למרות שחלפו 7 שנים, נא לסמן X במשבת
+            זו</label
+          >
+          <input
+            type="checkbox"
+            id="previousNameInID"
+            name="previousNameInID"
+          />
+        </section>
+
+        <section name="youthNameInID" style="float: left">
+          <label for="youthNameInID">
+            שם הנעורים ירשם בספח תעודת הזהות אם חלפו 7 שניום מיום שהוחלף שם
+            <br />
+            הנעורים ואין ברצונך שירשם בשפח תעודת הזהות, נא לסמן X במשבמצת זו
+          </label>
+          <input type="checkbox" id="youthNameInID" name="youthNameInID" />
+        </section>
+        <br /><br /><br />
+
+        <fieldset name="ClientAddressDetailsInID">
+          <legend>המען הראשי (כפי שיירשם בספח תעודת הזהות)</legend>
+          <br />
+          <label for="clientCity">הישוב </label>
+          <input type="text" id="clientCity" name="clientCity" />
+
+          <label for="clientStreet">הרחוב </label>
+          <input type="text" id="clientStreet" name="clientStreet" />
+
+          <label for="clientHomeNum">מספר הבית </label>
+          <input type="number" id="clientHomeNum" name="clientHomeNum" />
+
+          <label for="clientApparantmentHomeNum">מספר הדירה </label>
+          <input
+            type="number"
+            id="clientApparantmentHomeNum"
+            name="clientApparantmentHomeNum"
+          />
+
+          <label for="clientPostalCode"> המיקוד</label>
+          <input type="number" id="clientPostalCode" name="clientPostalCode" />
+
+          <label for="clientMobileNum">מספר טלפון הנייד</label>
+          <input type="tel" id="clientMobileNum" name="clientMobileNum" />
+        </fieldset>
+
+        <label
+          >שימו/י לב! המען שירשם בטופס ישמש כהודעה על שינוי המען שלך ושל בן/בת
+          הזוג וילדיך הקטנים, בתנאי שיצורפו ספחי תעודותץ הזהות שלהם.</label
+        >
+        <br />
+        <br />
+
+        <fieldset name="ClientAddressDetailsForSentID">
+          <legend>כתובת למשלוח תעודת הזהות</legend>
+          <br />
+          <label for="clientCitySentID"> הישוב</label>
+          <input type="text" id="clientCitySentID" name="clientCitySentID" />
+
+          <label for="clientStreetSentID">הרחוב</label>
+          <input
+            type="text"
+            id="clientStreetSentID"
+            name="clientStreetSentID"
+          />
+
+          <label for="clientHomeNumSentID">מספר הבית </label>
+          <input
+            type="number"
+            id="clientHomeNumSentID"
+            name="clientHomeNumSentID"
+          />
+
+          <label for="clientApparantmentHomeNumSentID">מספר הדירה </label>
+          <input
+            type="number"
+            id="clientApparantmentHomeNumSentID"
+            name="clientApparantmentHomeNumSentID"
+          />
+
+          <label for="clientMailboxNum">תא דואר </label>
+          <input type="number" id="clientMailboxNum" name="clientMailboxNum" />
+
+          <label for="clientPostalCodeForSent">המיקוד </label>
+          <input
+            type="number"
+            id="clientPostalCodeForSent"
+            name="clientPostalCodeForSent"
+          />
+          <br /><br />
+          <label for="clientlastNameForSent">אצל משפחת </label>
+          <input
+            type="text"
+            id="clientlastNameForSent"
+            name="clientlastNameForSent"
+          />
+        </fieldset>
+        <section name="moreOptionSentAdressInID">
+          <label
+            >ע"פ חוק עדכון כתובת, התשס"ה ה-2005, כל תושב ראשי למסור הנוסף למען
+            הרשום במרשם התושבים גם כתובת למשלוח דואר אשר יירשם בקובץ מרשם
+            התושבים,
+            <br />
+            "כתובת למשלוח דואר" הרשומה במרשם התושבים תימסר למוסדות ורשויות עעפ"י
+            בקשתם בהתאם לרשום בתוספת לחוק. <br />
+          </label>
+
+          <label for="addSentAddressToID"
+            >אם ברצונך שהכתובת למשלוח תעודת הזהות תירשם בקובץ מרשם התושבים
+            כ"כתובת למשלו דואר" שלך יש לסמן X במשבצת</label
+          >
+          <input
+            type="checkbox"
+            id="addSentAddressToID"
+            name="addSentAddressToID"
+          />
+          <br />
+          <label for="addSentAddressToIDChildren">
+            אם ברצונך שהכתובת בנ"ל תירשם גם עבור ילידך הקטנים, יש לסמן X במשבמת
+          </label>
+          <input
+            type="checkbox"
+            id="addSentAddressToIDChildren"
+            name="addSentAddressToIDChildren"
+          />
+        </section>
+        <br />
+        <section name="SignatureDetiles">
+          <label for="PlaceNameOfSignature"> המקום: </label>
+          <input
+            type="text"
+            id="PlaceNameOfSignature"
+            name="PlaceNameOfSignature"
+          />
+
+          <label for="DateOfSignature"> תאריך: </label>
+          <input type="date" id="DateOfSignature" name="DateOfSignature" />
+
+          <label for="clientSignature"> חתימת המבקש/ת X</label>
+          <input type="text" id="clientSignature" name="clientSignature" />
+        </section>
+        <hr />
+        <section name="MoreInfoID" style="text-align: center">
+          <label> <b>מידע לגבי תוקף תעודת זהות והוראת שעה </b></label>
+          <br />
+          <label>
+            <b
+              >בהתאם להוראת שעה בחוק, מי שרק תמונת הפנים שלו נשמרת במאגר
+              הביומטרי יקבל מסמכי זיהוי עם תורף עד חמש שנים מי, <br />
+              שיסכים לשמירת תמונות טביעות האצבע והן נשמרות במאגר הביומטרי, יקבל
+              מסמכי זיהוי עם תוקף עד עשר שנים.
+            </b></label
+          >
+
+          <label for="clientSignatureMoreInfoID"> חתימת המבקש/ת X</label>
+          <input
+            type="text"
+            id="clientSignatureMoreInfoID"
+            name="clientSignatureMoreInfoID"
+          />
+        </section>
+        <hr />
+
+        <section name="lostIdDetails">
+          <label
+            ><b>הצהרה על אובדן / גניסה / השחתה של תעודת זהות</b> (יש למלא רק
+            למבקש/ת תעודת זהות במקום האבודה / גנובה / מושחתת)</label
+          >
+          <br />
+          <br />
+          <label for="lostIdDate">אני מצהיר/ה שבתאריך ה-</label>
+          <input type="date" id="lostIdDate" name="lostIdDate" />
+          <label> נא לסמן X במשבמת המתאימה</label>
+          <br />
+          <input type="radio" id="lostIDReason" name="lostReason" />
+          <label for="lostIDReason">אבדה</label>
+
+          <input type="radio" id="StolenIDReason" name="lostReason" />
+          <label for="StolenIDReason">נגנבה</label>
+
+          <input type="radio" id="wasCorruptedIDReason" name="lostReason" />
+          <label for="wasCorruptedIDReason">הושחתה</label>
+          <label style="margin: 10%"> <b>תעודת זהות</b></label>
+          <br />
+          <input type="radio" id="lostOnMyName" name="lostOnName" />
+          <label for="lostOnMyName">על שמי</label>
+
+          <input type="radio" id="lostOnchildrenName" name="lostOnName" />
+          <label for="lostOnchildrenName">על שם ילדי הקטין,</label>
+          <label style="margin: 1%">
+            (הצהרה לגבי קטין, על אחד מההורים לחתום על ההצהרה בנוכחות עובד
+            הרשות)</label
+          >
+          <br /><br /><br />
+          <label style="margin-left: 1%">פרטי ההורה:</label>
+          <label for="minorsParentsDetilesLostIDFullName"> שם ומשפחה</label>
+          <input
+            type="text"
+            id="minorsParentsDetilesLostIDFullName"
+            name="minorsParentsDetilesLostIDFullName"
+          />
+
+          <label for="minorsParentsDetilesLostIDIdNum"> מספר זהות: </label>
+          <input
+            type="number"
+            id="minorsParentsDetilesLostIDIdNum"
+            name="minorsParentsDetilesLostIDIdNum"
+          />
+          <br /><br />
+          <label for="minorsParentsDetilesLostIDReason">
+            נסיבות האובדן/גניבה:
+          </label>
+          <input
+            type="text"
+            id="minorsParentsDetilesLostIDReason"
+            name="minorsParentsDetilesLostIDReason"
+          />
+          <br /><br />
+          <label for="minorsParentsDetilesLostIDPlace">
+            המקום בו אירע הדבר (פרט ככל האפשר)
+          </label>
+          <input
+            type="text"
+            id="minorsParentsDetilesLostIDPlace"
+            name="minorsParentsDetilesLostIDPlace"
+          />
+          <br /><br />
+          <label> האם הוגשה תלונה במשטרה: </label>
+          <label for="PoliceComplaintYes">כן</label>
+          <input type="radio" id="PoliceComplaintYes" name="PoliceComplaint" />
+          <label for="PoliceComplaintNo">לא</label>
+          <input type="radio" id="PoliceComplaintNo" name="PoliceComplaint" />
+
+          <label for="PoliceComplaintPlace"> מקום הגשת התלונה: </label>
+          <input
+            type="text"
+            id="PoliceComplaintPlace"
+            name="PoliceComplaintPlace"
+          />
+          <br /><br />
+          <section name="confirmationStatement" style="text-align: center">
+            <fieldset name="confirmationStatement">
+              <label
+                ><b
+                  >אני מצהיר/ה בזה שאין ברשותי תעודת זהות. תעודת הזהות שלי אבדה
+                  / נגנבה/ ואני מתחייב להחזירה לכם מיד, אם אמצא אותה או תוחזר
+                  <br />
+                  אלי, הובא לידיעתי כי תעודת הזהות שתינתן לי מבטלת את תעודת
+                  הזהות הקודת. הנני מאשר/ת בזה שהובא לידיעתי כי לפי סעיף 35(ב)
+                  לחוק <br />
+                  מרשם האוכלוסין תשכ"ה - 1965: מסירת מיעד כוזב ביודעין לשם קבלת
+                  תעודת זהות מהווה עבירה על החוק ודינה מאסר וקנס.</b
+                ></label
+              >
+            </fieldset>
+            <br />
+            <section name="confirmationStatementSignatureDetiles">
+              <label for="confirmationStatementSignatureDetiles"
+                >שם המצהיר:
+              </label>
+              <input
+                type="text"
+                id="confirmationStatementSignatureDetiles"
+                name="confirmationStatementSignatureDetiles"
+              />
+
+              <label for="confirmationStatementId"> מספר זהות: </label>
+              <input
+                type="number"
+                id="confirmationStatementId"
+                name="confirmationStatementId"
+              />
+
+              <label for="confirmationStatementclientSignature">
+                חתימה: X</label
+              >
+              <input
+                type="text"
+                id="confirmationStatementclientSignature"
+                name="confirmationStatementclientSignature"
+              />
+            </section>
+          </section>
+        </section>
+      </section>
+      <br />
+      <section name="subbmitButton" style="text-align: center">
+        <button>שלח</button>
+      </section>
+    </form>
+  </body>
+</html>
